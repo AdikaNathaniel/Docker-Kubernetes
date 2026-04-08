@@ -1,0 +1,6 @@
+1.Docker makes your code more portable and Kubernetes helps to run
+multiple docker containers.
+2.In Go and Java,you build code before running it.
+3.Hypervisor allows to run the various virtual machines,side by side.
+It translates language from the Guest OS into langaugae that the Host
+operating system understands.
