@@ -4,3 +4,23 @@ multiple docker containers.
 3.Hypervisor allows to run the various virtual machines,side by side.
 It translates language from the Guest OS into langaugae that the Host
 operating system understands.
+4.Docker Client and Docker Host are two different concepts.
+*Whereas Docker Client is usually installed on the PC,docker Host is
+usually remote and the client talks to the Host via REST API calls.
+5.Docker Daemon runs and manages all the containers that are 
+running or stopped as well as management of images.
+6.Image Regsitry stores images which are used to create docker containers.
+The containers are stored in the Docker Host.
+7.To run a container from an image,
+   - 'docker run' in the CLI
+   - CLI sends a request to the Docker host via a REST API
+   - Docker Host checks if that image is present in the local cache
+   - If it is not,it downloads that image from the image registry.
+   - Docker Host instantiates a new container based on the image received.
+8. To build and push an image,
+   - docker build in the CLI
+   - CLI sends request to Docker Host 
+      * This will include the Dockerfile and the context
+   - Docker Host builds the image according to the Dockerfile.
+   - Docker host tags the image and stores it locally
+   - Run docker push command in the CLI.
