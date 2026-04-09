@@ -56,3 +56,17 @@ to the docker image and maps a port to a particular port.
   ` docker ps -a | grep web_server`
   ` docker ps --filter name=web_server` 
            These two commands help to get a specific container details.
+18.
+ `docker ps ` → shows only running containers
+ `docker ps -a ` → shows ALL containers (running + stopped + exited)
+
+19.
+ ` docker ps -q ` -- This returns only the container cIds
+(q is thought to stand for quiet)
+
+20.
+  ` docker stop $(docker ps -q) `  -- This stops all the containers via their cIds
+21. In Vim, `:qa` means “quit all,” closing all open files and exiting the editor (unless there are unsaved changes).
+22. 
+  ` docker --help ` - This helps to get cmds that are used by docker.
+  
