@@ -51,3 +51,8 @@ to the docker image and maps a port to a particular port.
  15. exit 0 ensures that there is an exit with no errors.
  16. docker rm <cId>  - This removes the specific container Id.
  You can add multiple cIds at once so have a cId-1 and a cId-2.
+
+ 17.
+  ` docker ps -a | grep web_server`
+  ` docker ps --filter name=web_server` 
+           These two commands help to get a specific container details.
