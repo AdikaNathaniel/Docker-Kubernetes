@@ -42,3 +42,7 @@ The containers are stored in the Docker Host.
 12.
   `docker run -d -p 8080:80 --name web-server nginx` -- this gives a name
 to the docker image and maps a port to a particular port.
+13.
+ `docker stop web-server` -- This stops the container in a graceful way
+ but docker kill can lead to losing some in memory data more like forcefully
+ ending all running instances for that one you selected.
