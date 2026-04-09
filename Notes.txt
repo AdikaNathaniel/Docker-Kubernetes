@@ -24,3 +24,21 @@ The containers are stored in the Docker Host.
    - Docker Host builds the image according to the Dockerfile.
    - Docker host tags the image and stores it locally
    - Run docker push command in the CLI.
+
+9.
+ - pwd means print working directory.
+ - explorer.exe . is a command to open the file explorer.
+ - echo "Hello world" > hello.txt  is a command that creates a hello.txt file in 
+ a particular directory.
+ - windows subsystem for linux is the technical term
+ - mkdir dummy   - This creates a folder called dummy
+ - Ngnix is a web server that allows you to visualize what
+ you are running locally.
+
+10. 
+ `docker run -d nginx` starts a new container from the NGINX image and runs it in the background.
+11.
+  `docker kill 'container name'`  -- this command stops a running docker image
+12.
+  `docker run -d -p 8080:80 --name web-server nginx` -- this gives a name
+to the docker image and maps a port to a particular port.
