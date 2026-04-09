@@ -46,3 +46,8 @@ to the docker image and maps a port to a particular port.
  `docker stop web-server` -- This stops the container in a graceful way
  but docker kill can lead to losing some in memory data more like forcefully
  ending all running instances for that one you selected.
+ 14.
+  ` docker run` - This will do a docker create and a docker start.
+ 15. exit 0 ensures that there is an exit with no errors.
+ 16. docker rm <cId>  - This removes the specific container Id.
+ You can add multiple cIds at once so have a cId-1 and a cId-2.
